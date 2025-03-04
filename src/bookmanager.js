@@ -1,3 +1,4 @@
+import { signUp, logIn, logOut, onAuthStateChanged } from "./auth";
 import { db } from "./config";
 import { collection, getDocs, doc, deleteDoc, onSnapshot, getDoc, setDoc } from "firebase/firestore";
 
