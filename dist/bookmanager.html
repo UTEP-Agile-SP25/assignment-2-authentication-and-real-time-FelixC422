@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Manager</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Book Manager Home Page</h1>
+
+    <h2>Add a Book</h2>
+    <form id="addBookForm">
+        <input type="text" id="title" placeholder="Title" required><br><br>
+        <input type="text" id="author" placeholder="Author" required><br><br>
+        <input type="number" id="year" placeholder="Year" required><br><br>
+        <input type="number" id="rating" placeholder="Rating (1-5)" step="0.1" required><br><br>
+        <input type="submit" value="Add Book">
+    </form>
+
+    <h2>Delete a Book</h2>
+    <form id="deleteBookForm">
+        <input type="text" id="deleteTitle" placeholder="Enter book title" required><br><br>
+        <input type="submit" value="Delete Book">
+    </form>
+
+    <h2>All Books</h2>
+    <div id="bookList">
+        <p>Loading books...</p>
+    </div>
+
+    
+</body>
+<script src="citymanager.bundle.js"></script>
+
+</html>
